@@ -124,7 +124,7 @@ h6{
     /* background-color: #50506249; */
     /* border: 1px solid #eaecef; */
     border-radius: 4px;
-    padding: 20px 0;
+    padding: 20px 0px 0;
 }
 
 .jumbotron h1 {
@@ -177,16 +177,16 @@ h6{
 
 .main-home-onea {
   float :left;
-  width: 50%;
+  width: 48%;
 }
 .main-home-twob {
   float :right;
-  width: 50%;
+  width: 48%;
 }
 
 .main-home-onea .box-isi,
 .main-home-twob .box-isi {
-  height: 800px
+  height: 400px
 }
 
 /* End Main */
@@ -207,9 +207,11 @@ h6{
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 3px 3px 0 0;
-  margin: 0;
+  margin: 20px auto;
   padding: 0;
   text-transform: uppercase;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .box-heading h4 {
@@ -285,6 +287,12 @@ textaea {
    font-size: 15px; 
 }
 /* Start Copyright */
+
+/* Start contact */
+.contact {
+  background-image: ;
+}
+/* End contact */
 
 /* Start Effect */
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
@@ -508,3 +516,98 @@ textaea {
   opacity: 1;
 }
 /* End Effect 1 */
+
+/* Start Effect Wow */
+@import url(https://fonts.googleapis.com/css?family=Monsterrat:400,700;);
+.snip1553 {
+  background-color: #222222;
+  color: #ffffff;
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  max-width: 31%;
+  min-width: 31%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.snip1553 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1553:after {
+  background-color: #B46E3C;
+  bottom: 0;
+  content: '';
+  height: 0%;
+  right: 0;
+  position: absolute;
+  width: 10px;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1553 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1553 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1em;
+  opacity: 0;
+}
+
+.snip1553 h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.snip1553 h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.snip1553 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1553:hover > img,
+.snip1553.hover > img {
+  opacity: 0.1;
+}
+
+.snip1553:hover:after,
+.snip1553.hover:after {
+  height: 100%;
+}
+
+.snip1553:hover figcaption,
+.snip1553.hover figcaption {
+  opacity: 1;
+}
+/* End Effect Wow */
