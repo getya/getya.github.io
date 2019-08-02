@@ -16,21 +16,23 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<!-- End CSS -->
 
+	<!-- Start Whatsapp -->
 	<!-- WhatsHelp.io widget -->
-	<script type="text/javascript">
+		<script type="text/javascript">
 		(function () {
-			var options = {
-				whatsapp: "+6285260320077", //WhatsApp number
-				call_to_action: "Message us", //Call to action
-				position: "right", // Positionmay be 'right' or 'left'
-			};
-			var proto =document.location.protocol, host ="whatshelp.io", url = proto + "/static." + host;
-			var s = document.createElemen('script'); s.type = 'textjavascript'; s.async = true; s.src =url + '/widget-send-button/jsinit.js';
-			s.onload = function () {WhWidgetSendButton.init(host, proto,options); };
-			var x = document.getElementsByTagNam('script')[0];x.parentNode.insertBefore(s, x);
+		var options = {
+		whatsapp: "+6285260320077", // WhatsApp number
+		call_to_action: "Message us", // Call to action
+		position: "right", // Position may be 'right' or 'left'
+		};
+		var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+		s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+		var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 		})();
-	</script>
+		</script>
 	<!-- /WhatsHelp.io widget -->
+	<!-- End Whatsapp -->
 
 </head>
 <body>
@@ -123,30 +125,29 @@
 				<div>
 					<label for="Nama"> Nama</label> 
 					<br>
-					<br>
 					<input type="text" placeholder="Nama Lengkap" size="50" name="Nama" id="Nama">
 				</div>
 				<div>
-					<label for="email">Email</label> 
 					<br>
+					<label for="email">Email</label> 
 					<br>
 					<input type="email" placeholder="example@example.com" size="50" name="email" id="email">
 				</div>
 				<div>
-					<label for="Phone number">Phone Number</label> 
 					<br>
+					<label for="Phone number">Phone Number</label> 
 					<br>
 					<input type="text" placeholder="Phone Number" size="50" name="phone number" id="phone number">
 				</div>
 				<div>
-					<label for="kota"> Kota<label> 
 					<br>
+					<label for="kota"> Kota<label> 
 					<br>
 					<input type="text"placeholder="Kota" size="50"name="kota" id="kota">
 				</div>
 				<div>
-					<label for="your message">Your Message</label>
 					<br>
+					<label for="your message">Your Message</label>
 					<br>
 					<textarea name="your message" id="your message" cols="52" rows="10" placeholder="Write Your Message"></textarea>
 				</div>
