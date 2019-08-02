@@ -16,6 +16,22 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<!-- End CSS -->
 
+	<!-- WhatsHelp.io widget -->
+	<script type="text/javascript">
+		(function () {
+			var options = {
+				whatsapp: "+6285260320077", //WhatsApp number
+				call_to_action: "Message us", //Call to action
+				position: "right", // Positionmay be 'right' or 'left'
+			};
+			var proto =document.location.protocol, host ="whatshelp.io", url = proto + "/static." + host;
+			var s = document.createElemen('script'); s.type = 'textjavascript'; s.async = true; s.src =url + '/widget-send-button/jsinit.js';
+			s.onload = function () {WhWidgetSendButton.init(host, proto,options); };
+			var x = document.getElementsByTagNam('script')[0];x.parentNode.insertBefore(s, x);
+		})();
+	</script>
+	<!-- /WhatsHelp.io widget -->
+
 </head>
 <body>
 
@@ -50,7 +66,7 @@
 	<!--End Menu Primer-->
 
 	<!-- Start Jumbotron -->
-	<div class="container jumbotron">
+	<div class="container">
 		<h1>CONTACT</h1>
 	</div>
 	<!-- End Jumbotron -->
@@ -59,135 +75,92 @@
 	<div class="container">
 		<!-- Start Alamat -->
 		<div class="main-home-onea">
-		<div class="box-head">
+		<!-- <div class="box-head"> -->
 			<h4>Getya Studio</h4>
-		</div>	
-				<p>Jl. Pango Raya, Lorong Yahwa Amad, Banda Aceh, Indonesia, 
-						<br>
-						24111
-						+62 82 60320077</p>
+		<!-- </div>	 -->
+				<p>Jl. Jalan Hamzah Fansuri No. XX Kopelma Darussalam <br> Kecamatan Syiah Kuala Kota Banda Aceh, Aceh, Indonesia 23111
+				</p>
 				<ul>
-					<li>Email: <a href="mailto:getya.studio@gmail.com" title="mailto:getya.studio@gmail.com">getya.studio@gmail.com</a></li>
-					<li>Wa: <a href="tel:+62-852-6032-0077" title="+62-852-6032-0077">+62-852-6032-0077</a></li>
-					<li>Instagram: <a href="https://www.instagram.com/getya.studio/?hl=en" title="getya.studio">getya.studio</a></li>
-
 					<li>
-						<a href="https://web.facebook.com/getya.studio/?ref=br_rs" title="Facebook">
-							<img src="image/facebook.png" alt="logo facebook" width="30"> Facebook - Getya Studio
+						<a href="mailto:getya.studio@gmail.com" title="mailto:getya.studio@gmail.com"> <img src="image/gmail.png" alt="logo gmail" width="30"> getya.studio@gmail.com</a>
+					</li>
+					<br>
+					<li>
+						<a href="tel:+62-852-1389-7032" title="+62-852-1389-7032"> 
+						<img src="image/whatsapp.png" alt="logo whatsapp" width="30"> +62-852-1389-7032
 						</a>
 					</li>
-					<li><a href="https://www.instagram.com/getya.studio/?hl=en" title="Instagram">
-						<img src="image/instagram.png" alt="logo Instagram" width="30"> Instagram - Getya Studio
+					<br>
+					<li>
+						<a href="https://www.instagram.com/getya.studio/?hl=en" title="getya.studio">
+						<img src="image/instagram.png" alt="logo instagram" width="30"> getya.studio
+						</a>
+					</li>
+					<br>
+					<li>
+						<a href="https://web.facebook.com/getya.studio/?ref=br_rs" title="Facebook">
+						<img src="image/facebook.png" alt="logo facebook" width="30"> Getya.Studio
+						</a>
+					</li>
+					<br>
+					<li>
+						<a href="https://www.instagram.com/getya.studio/?hl=en" title="twitter">
+						<img src="image/twitter.png" alt="logo twitter" width="30"> @getyastudio
 						</a>
 					</li>		
 				</ul>
-		</div>
+			</div>
 		<!-- End Alamat-->
 
 		<!-- Start Formulir -->
 		<div class="main-home-twob">
-		<div class="box-head">
-			<h2>Kontak kami</h2>
-		</div>	
+		<!-- <div class="box-head"> -->
+			<h4>Kontak kami</h4>
+		<!-- </div>	 -->
 			<p>Untuk informasi lanjut mengenai studio kami, anda dapat menghubungi kami langsung dan mengisi formulir dibawah ini</p>
 
 			<form action="" class="contact-form">
 				<div>
-					<label for="Nama"> Nama lengkap (Sesuai ID)</label> 
+					<label for="Nama"> Nama</label> 
+					<br>
 					<br>
 					<input type="text" placeholder="Nama Lengkap" size="50" name="Nama" id="Nama">
 				</div>
-
 				<div>
-					<label for="kota"> Kota</label> 
+					<label for="email">Email</label> 
 					<br>
-					<input type="text" placeholder="Kota" size="50" name="kota" id="kota">
+					<br>
+					<input type="email" placeholder="example@example.com" size="50" name="email" id="email">
 				</div>
-			<div>
-				<label for="email">Email</label> 
+				<div>
+					<label for="Phone number">Phone Number</label> 
+					<br>
+					<br>
+					<input type="text" placeholder="Phone Number" size="50" name="phone number" id="phone number">
+				</div>
+				<div>
+					<label for="kota"> Kota<label> 
+					<br>
+					<br>
+					<input type="text"placeholder="Kota" size="50"name="kota" id="kota">
+				</div>
+				<div>
+					<label for="your message">Your Message</label>
+					<br>
+					<br>
+					<textarea name="your message" id="your message" cols="52" rows="10" placeholder="Write Your Message"></textarea>
+				</div>
 				<br>
-				<input type="email" placeholder="example@example.com" size="50" name="email" id="email">
-			</div>
-			<div>
-				<label for="Phone number">Phone Number</label> 
-				<br>
-				<input type="text" placeholder="Phone Number" size="50" name="phone number" id="phone number">
-			</div>
-			<div>
-				<label for="subject">Subject</label> 
-				<br>
-				<input type="subject" placeholder="Subject" size="50" name="subject" id="subject">
-			</div>
-			<div>
-				<label for="your message">Your Message</label>
-				<br>
-				<textarea name="your message" id="your message" cols="52" rows="10" placeholder="Write Your Message"></textarea>
-			</div>
-			<div>
-				<input type="submit" name="send" id="send" size="50">
-				</form>	
-			</div>
+				<div>
+					<input type="submit" name="send" id="send" size="50">
+					</form>	
+				</div>
 		<!-- End Formulir-->
 	</div>
 	<!-- End Kontak-->
 
-<!-- Start Menu sekunder -->
-<!-- <div class="container-full menu-sekunder">
-		<div class="container"> -->
-
-		<!-- Start Getya Studio -->
-		<!-- <div class="menu-sekunder-one">
-			<h4>Getya Studio</h4>
-			<p>Bringing Space to Life</p>
-			<p>Email: <a href="mailto:getya.studio@gmail.com" title="getya.studio@gmail.com">getya.studio@gmail.com</a></p>
-			<p>Wa: <a href="tel:+62-852-6032-0077" title="+62-852-6032-0077">+62-852-6032-0077</a></p>
-		</div> -->
-		<!-- End Getya Studio -->
-
-		<!-- Start Menu -->
-		<!-- <div class="menu-sekunder-two">
-			<h4>Menu</h4>
-			<ul>
-				<li>
-					<a href="index.html" title="home">home</a>
-				</li>
-				<li>
-					<a href="about.html" title="about">about<a>
-				</li>
-				<li>
-					<a href="projects.html" title="Projects" >Projects </a>
-				</li>
-				<li>
-					<a href="publiction.html"title="Publication">Publication </a>
-				<li>
-					<a href="contact.html"title="contact" >contact</a>
-				</li>
-			</ul>
-		</div> -->
-		<!-- End Menu -->
-
-		<!-- Start Media Sosial -->
-		<!-- <div class="menu-sekunder-three">
-			<h4>Media Sosial</h4>
-			<ul>
-				<li>
-					<a href="https://web.facebook.com/getya.studio/?ref=br_rs" title="Facebook">
-						<img src="image/facebook.png" alt="logo facebook" width="30"> Facebook - Getya Studio
-					</a>
-				</li>
-				<li><a href="https://www.instagram.com/getya.studio/?hl=en" title="Instagram">
-					<img src="image/instagram.png" alt="logo Instagram" width="30"> Instagram - Getya Studio
-					</a>
-				</li>		
-			</ul>
-		</div> -->
-		<!-- End Media Sosial -->
-		<!-- </div>
-	</div> -->
-	<!-- End Menu sekunder -->
-
 	<!-- Start Copyright -->
-	<div class="container-full">
+	<div class="container">
 		<hr>
 		<p>Copyright &copy; 2019 - Getya Studio</p>
 	</div>
